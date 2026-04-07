@@ -21,16 +21,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           submodules: recursive
 
-      - name: Build KiShare
-        uses: hmcty/kishare/webviewer/.github/actions/build-viewer@main
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
         with:
-          projects-dirs: 'boards'
-          title: 'hmcty/kicad-ws'
-          base-path: '/kicad-ws'
+          node-version: '24'
+
+      - run: npm ci
+      - run: npm install kishare@1.1.0
+      - run: npm exec kishare build
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
