@@ -50,7 +50,7 @@ jlcpcb/
 .svg2shenzhen-cache
 *.zip
 
-# KiShare build files
+# KiSite build files
 dist/
-.kishare/
+.kisite/
 

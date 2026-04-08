@@ -1,4 +1,4 @@
-name: Build and Deploy KiShare
+name: Build and Deploy KiSite
 
 on:
   push:
@@ -30,8 +30,8 @@ jobs:
         with:
           node-version: '24'
 
-      - run: npm install kishare@1.1.0
-      - run: npm exec kishare build
+      - run: npm install kisite@1.0.1
+      - run: npm exec kisite build
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
