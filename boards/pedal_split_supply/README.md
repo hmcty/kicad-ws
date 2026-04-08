@@ -1,8 +1,8 @@
-## Pedal Split Supply
+# Pedal Split Supply
 
 A breadboard-compatible, split power supply for prototyping audio circuits.
 
-Provides low-noise, stable +/- 7V rails. Requires 9V DC input. 
+Provides low-noise, stable +/- 7V rails. Expects 9V DC input. 
 
 Parts:
 - [TPS7A49](https://www.ti.com/product/TPS7A49)
@@ -17,12 +17,12 @@ Parts:
   - DC/DC converter for -9V rail
   - Vin range: 2.45V to 16V
 
-### LT1931 Layout
+## LT1931 Layout
 
 Analog Devices recommends the following layout for the LT1931:
-![LT1931 Layout](boards/pedal_split_supply/assets/lt1931-layout.png)
+![LT1931 Layout](assets/lt1931-layout.png)
 
-### Errata
+## Errata
 
 v1.0.0
 ------
