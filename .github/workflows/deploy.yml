@@ -30,7 +30,7 @@ jobs:
         with:
           node-version: '24'
 
-      - run: npm install kisite@1.0.1
+      - run: npm install kisite@latest
       - run: npm exec kisite build
 
       - name: Setup Pages
