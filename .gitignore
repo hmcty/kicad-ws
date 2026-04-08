@@ -49,6 +49,8 @@ jlcpcb/
 *.raw
 .svg2shenzhen-cache
 *.zip
+*.stl
+*.step
 
 # KiSite build files
 dist/
